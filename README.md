@@ -1,5 +1,4 @@
-# Proyecto Scripts
-
+# 4 Bash Basics
 ## Normas del Proyecto
 1. Cada uno trabajara en su propia rama con su nombre y apellido ej: `sergio.garcia`
 2. Los scripts deben crearse en una carpeta con tu nombre.apellido ej: sergio.garcia
