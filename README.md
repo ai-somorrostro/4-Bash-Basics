@@ -38,7 +38,7 @@ o usa VScode... :shipit:
 
 # script1.sh
 
-Descripción del script...
+Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
 
 **Ejecución:**
 
