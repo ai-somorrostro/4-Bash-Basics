@@ -35,7 +35,7 @@ o usa VScode... :shipit:
 
 
 
-### Ejemplo de documentacion
+### Ejemplo de documentación
 
 # script1.sh
 
