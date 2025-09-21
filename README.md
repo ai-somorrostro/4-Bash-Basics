@@ -49,9 +49,33 @@ echo "Hola, ¿como vas?"
 
 **Ejecución:**
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script1.sh
-
 **Salida:**
 Hola, ¿como vas?
 
 
+
+# script2.sh
+
+Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
+si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+
+## Codigo
+
+**Código:**
+
+#!/bin/bash
+# Solicita el nombre al usuario
+echo "¿Cuál es tu nombre?"
+read nombre
+
+# Imprime el saludo personalizado
+echo "¡Hola, $nombre!"
+
+**Ejecución:**
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script2.sh
+
+**Salida:**
+¿Cuál es tu nombre?
+clemen
+"¡Hola, clemen!"
 
