@@ -1,1 +1,14 @@
-FUTURAS INSTRUCCIONES GENERALES
+INSTRUCCIONES GENERALES
+
+EJECUCION:
+Para ejecutar los scripts tendras que darle permisos de ejecucion,
+usa el comando "chmod +x [nombre script].sh"
+
+Te quedaria algo asi:
+(primeras dos lineas de ejemplo de que no funciona sin permisos)
+iker@iker-BDA1:~/4-Bash-Basics/iker.gorostiaga$ ./script1.sh
+bash: ./script1.sh: Permiso denegado
+iker@iker-BDA1:~/4-Bash-Basics/iker.gorostiaga$ chmod +x script1.sh
+iker@iker-BDA1:~/4-Bash-Basics/iker.gorostiaga$ ./script1.sh
+¡Hola, Soy un script muy chulo!
+
