@@ -56,7 +56,7 @@ Hola, ¿como vas?
 
 # script2.sh
 
-Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
+Es un script que, al ejecutar el comando bash con la ruta del script pregunta por tu nombre y por terminal devuelve un saludo con tu nombre
 si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
 
 ## Codigo
@@ -79,3 +79,26 @@ user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script2.sh
 clemen
 "¡Hola, clemen!"
 
+
+
+# script3.sh
+
+Es un script que, al ejecutar el comando bash con la ruta del script, crea un fichero de texto a la altura de script3.sh con la frase "Hoy aprendí a crear archivos con Bash."
+si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+
+## Codigo
+
+**Código:**
+
+#!/bin/bash
+# Crear el archivo y escribir el texto
+echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
+
+**Ejecución:**
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script3.sh
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
+
+**Salida:**
+mis_notas.txt  script1.sh  script2.sh  script3.sh
+Hoy aprendí a crear archivos con Bash.
