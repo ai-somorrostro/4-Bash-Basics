@@ -39,7 +39,7 @@ o usa VScode... :shipit:
 # script1.sh
 
 Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
-si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
 
 ## Codigo
 
@@ -57,7 +57,7 @@ Hola, ¿como vas?
 # script2.sh
 
 Es un script que, al ejecutar el comando bash con la ruta del script pregunta por tu nombre y por terminal devuelve un saludo con tu nombre
-si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
 
 ## Codigo
 
@@ -84,7 +84,7 @@ clemen
 # script3.sh
 
 Es un script que, al ejecutar el comando bash con la ruta del script, crea un fichero de texto a la altura de script3.sh con la frase "Hoy aprendí a crear archivos con Bash."
-si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
 
 ## Codigo
 
@@ -101,4 +101,34 @@ user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
 
 **Salida:**
 mis_notas.txt  script1.sh  script2.sh  script3.sh
+Hoy aprendí a crear archivos con Bash.
+
+
+# script4.sh
+
+Es un script que, al ejecutar el comando bash con la ruta del script, crea una carpeta llamada "documentos" y despues mueve el fichero de texto "mis_notas" dentro de "documentos"
+si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+
+## Codigo
+
+**Código:**
+
+#!/bin/bash
+
+# Crear la carpeta llamada 'documentos'
+mkdir documentos
+
+# Mover el archivo 'mis_notas.txt' a la carpeta 'documentos'
+mv mis_notas.txt documentos/
+
+**Ejecución:**
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script4.sh
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cd documentos
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
+
+**Salida:**
+documentos  script1.sh  script2.sh  script3.sh  script4.sh
+mis_notas.txt
 Hoy aprendí a crear archivos con Bash.
