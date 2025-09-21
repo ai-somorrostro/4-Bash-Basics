@@ -34,22 +34,24 @@ o usa VScode... :shipit:
 
 
 
-### Ejemplo de documentación
+### documentación
 
 # script1.sh
 
 Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
+si no imprime quizas tengas que darle permisos, introduce el comando: chmod +x [ruta del .sh]
+
+## Codigo
+
+**Código:**
+#!bin/bash/
+echo "Hola, ¿como vas?"
 
 **Ejecución:**
-
-```bash
-bash script1.sh
-```
+user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script1.sh
 
 **Salida:**
-```bash
-texto de la salida
-```
+Hola, ¿como vas?
 
 
 
