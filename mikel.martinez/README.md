@@ -5,29 +5,37 @@
 ### 1. Clonar el repositorio
 ```bash
 git clone <URL_DEL_REPO>
-cd proyecto-scripts
+cd Tu ruta
+```
 
-2. Crear tu rama personal
+### 2. Crear tu rama personal
+```bash
 git checkout -b mikel.martinez
+```
 
-3. Crear tu carpeta personal
+### 3. Crear tu carpeta personal
+```bash
 mkdir mikel.martinez
 cd mikel.martinez
-
+```
 (O Visual Studio)
 
-4. Copiar/crear scripts dentro de tu carpeta
-5. Dar permisos de ejecución a los scripts
+### 4. Copiar/crear scripts dentro de tu carpeta
+### 5. Dar permisos de ejecución a los scripts
+```bash
 chmod +x script1.sh
 chmod +x script2.sh
 chmod +x script3.sh
 chmod +x script4.sh
+```
 
-6. Ejecutar los scripts
+### 6. Ejecutar los scripts
+```bash
 ./script1.sh
 ./script2.sh
 ./script3.sh
 ./script4.sh
+```
 
 ## script1.sh
 **Descripción:**  
