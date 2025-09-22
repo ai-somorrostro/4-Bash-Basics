@@ -50,6 +50,3 @@ bash script1.sh
 ```bash
 texto de la salida
 ```
-
-
-
