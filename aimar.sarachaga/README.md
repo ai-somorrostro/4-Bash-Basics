@@ -11,12 +11,7 @@ Antes de ejecutar los scripts de este proyecto, asegúrate de cumplir con los si
 ### Sistema Operativo Requerido
 - **Terminal de Linux**: Este proyecto **DEBE** ejecutarse en un entorno Linux con terminal bash
 - Distribuciones compatibles: 
-  - Ubuntu 18.04+ / Linux Mint 19+
-  - Debian 10+ 
-  - CentOS 7+ / RHEL 7+
-  - Fedora 30+
-  - Arch Linux / Manjaro
-  - openSUSE Leap 15+
+  - Ubuntu 24.04
   - **NO es compatible con Windows PowerShell o CMD**
 
 ### Herramientas Necesarias
@@ -75,27 +70,6 @@ chmod +x script4.sh
 ls -la *.sh
 
 # Deberías ver algo como: -rwxr-xr-x (la 'x' indica permisos de ejecución)
-```
-
-### Verificación del Entorno
-Antes de proceder, ejecuta estos comandos para verificar que todo está listo:
-
-```bash
-# 1. Verifica que estás en Linux
-uname -s
-# Debería mostrar: Linux
-
-# 2. Verifica el shell actual  
-echo $SHELL
-# Debería mostrar algo como: /bin/bash
-
-# 3. Verifica el directorio actual
-pwd
-# Debería mostrar la ruta completa al directorio del proyecto
-
-# 4. Lista los archivos del proyecto
-ls -la *.sh
-# Debería mostrar todos los scripts con permisos de ejecución (x)
 ```
 
 ### Posibles Problemas y Soluciones
