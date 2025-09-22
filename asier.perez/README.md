@@ -1,9 +1,11 @@
 # Instrucciones
 1 Clonar el repositorio. 
-```git clone ruta_repo```  
-2 Entra en la carpeta asier.perez.  
-```cd asier.perez```    
-3 Asegurarse de tener permisos de ejecución sobre los archivos. Para poner que sean ejecutable 
+```git clone ruta_repo```
+
+2 Entra en la carpeta asier.perez.    
+```cd asier.perez```
+
+3 Asegurarse de tener permisos de ejecución sobre los archivos. Para poner que sean ejecutable   
   ```chmod +x nombre_archivo```.
 
 ## Descripcion de los scripts
