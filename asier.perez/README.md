@@ -29,6 +29,6 @@ Resultado: Creacion del archivo mis_notas.txt con el mensaje 'Hoy aprendí a cre
 ### Script4
 Descripcion: Creando un archivo de notas, crea una carpeta llamada documentos y mueve el archivo mis_notas.txt del script anterior a esa carpeta
 
-Ejecucion: ```bash script3.sh```
+Ejecucion: ```bash script4.sh```
 
 Resultado: Creacion de la carpeta documentos y mueve el archivo mis_notas.txt a esa carpeta.
