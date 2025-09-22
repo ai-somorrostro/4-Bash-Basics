@@ -4,6 +4,129 @@ Este `README.md` te guiará sobre cómo ejecutar los cuatro scripts Bash que hem
 
 ---
 
+## Prerrequisitos
+
+Antes de ejecutar los scripts de este proyecto, asegúrate de cumplir con los siguientes requisitos:
+
+### Sistema Operativo Requerido
+- **Terminal de Linux**: Este proyecto **DEBE** ejecutarse en un entorno Linux con terminal bash
+- Distribuciones compatibles: 
+  - Ubuntu 18.04+ / Linux Mint 19+
+  - Debian 10+ 
+  - CentOS 7+ / RHEL 7+
+  - Fedora 30+
+  - Arch Linux / Manjaro
+  - openSUSE Leap 15+
+  - **NO es compatible con Windows PowerShell o CMD**
+
+### Herramientas Necesarias
+
+Todos los sistemas Linux modernos ya incluyen las herramientas básicas necesarias (bash, editores de texto básicos como nano/vi).
+
+### Configuración del Entorno
+
+#### Paso 1: Clonar el Repositorio
+```bash
+# Clona este repositorio en tu máquina local
+git clone [URL-del-repositorio]
+
+# Ejemplo: git clone https://github.com/usuario/scripts-bash-introduccion.git
+```
+
+#### Paso 2: Navegar al Directorio
+```bash
+# Cambia al directorio del proyecto clonado
+cd [nombre-del-repositorio-clonado]
+
+# Verifica que estás en la carpeta correcta
+pwd
+ls -la
+```
+
+#### Paso 3: Verificar los Archivos
+Asegúrate de que puedes ver los archivos de script:
+```bash
+# Lista todos los archivos .sh
+ls -la *.sh
+
+# Deberías ver los siguientes archivos:
+# script1.sh
+# script2.sh  
+# script3.sh
+# script4.sh
+```
+
+#### Paso 4: Dar Permisos de Ejecución
+**¡MUY IMPORTANTE!** Antes de ejecutar cualquier script, debes darle permisos de ejecución:
+```bash
+# Para todos los scripts de una vez
+chmod +x *.sh
+
+# O para scripts individuales
+chmod +x script1.sh
+chmod +x script2.sh
+chmod +x script3.sh
+chmod +x script4.sh
+```
+
+#### Paso 5: Verificar Permisos
+```bash
+# Verifica que los scripts tienen permisos de ejecución
+ls -la *.sh
+
+# Deberías ver algo como: -rwxr-xr-x (la 'x' indica permisos de ejecución)
+```
+
+### Verificación del Entorno
+Antes de proceder, ejecuta estos comandos para verificar que todo está listo:
+
+```bash
+# 1. Verifica que estás en Linux
+uname -s
+# Debería mostrar: Linux
+
+# 2. Verifica el shell actual  
+echo $SHELL
+# Debería mostrar algo como: /bin/bash
+
+# 3. Verifica el directorio actual
+pwd
+# Debería mostrar la ruta completa al directorio del proyecto
+
+# 4. Lista los archivos del proyecto
+ls -la *.sh
+# Debería mostrar todos los scripts con permisos de ejecución (x)
+```
+
+### Posibles Problemas y Soluciones
+
+#### Error: "Permission denied"
+```bash
+# Si ves este error al ejecutar un script:
+bash: ./script1.sh: Permission denied
+
+# Solución: Da permisos de ejecución
+chmod +x script1.sh
+```
+
+#### Error: "No such file or directory"
+```bash
+# Si ves este error:
+bash: ./script1.sh: No such file or directory
+
+# Solución: Verifica que estás en el directorio correcto
+pwd
+ls -la *.sh
+```
+
+#### Error: "Command not found"
+```bash
+# Si un comando básico no funciona (como nano, git, etc.)
+# Instala las herramientas faltantes según tu distribución
+```
+
+---
+
 ## Contenido
 
 1. [Script '¡Hola, Estudiantes de Bash!'](#1-script-hola-estudiantes-de-bash)
@@ -28,23 +151,23 @@ echo "¡Hola, Estudiantes de Bash!"
 ### Cómo Ejecutarlo
 
 **Guarda el script:**
-Crea un nuevo archivo llamado `hola.sh` y pega el código anterior.
+Crea un nuevo archivo llamado `script1.sh` y pega el código anterior.
 
 ```bash
-nano hola.sh
+nano script1.sh
 # Pega el código, guarda (Ctrl+O) y sal (Ctrl+X)
 ```
 
 **Da permisos de ejecución:**
 
 ```bash
-chmod +x hola.sh
+chmod +x script1.sh
 ```
 
 **Ejecuta el script:**
 
 ```bash
-./hola.sh
+./script1.sh
 ```
 
 ### Salida Esperada
@@ -77,22 +200,22 @@ echo "¡Hola, $nombre_usuario!"
 ### Cómo Ejecutarlo
 
 **Guarda el script:**
-Crea un nuevo archivo llamado `saludo_personalizado.sh` y pega el código anterior.
+Crea un nuevo archivo llamado `script2.sh` y pega el código anterior.
 
 ```bash
-nano saludo_personalizado.sh
+nano script2.sh
 ```
 
 **Da permisos de ejecución:**
 
 ```bash
-chmod +x saludo_personalizado.sh
+chmod +x script2.sh
 ```
 
 **Ejecuta el script:**
 
 ```bash
-./saludo_personalizado.sh
+./script2.sh
 ```
 
 ### Ejemplo de Uso
@@ -126,22 +249,22 @@ echo "Archivo 'mis_notas.txt' creado con el texto."
 ### Cómo Ejecutarlo
 
 **Guarda el script:**
-Crea un nuevo archivo llamado `crear_notas.sh` y pega el código anterior.
+Crea un nuevo archivo llamado `script3.sh` y pega el código anterior.
 
 ```bash
-nano crear_notas.sh
+nano script3.sh
 ```
 
 **Da permisos de ejecución:**
 
 ```bash
-chmod +x crear_notas.sh
+chmod +x script3.sh
 ```
 
 **Ejecuta el script:**
 
 ```bash
-./crear_notas.sh
+./script3.sh
 ```
 
 ### Salida Esperada
@@ -180,27 +303,27 @@ echo "Script completado. 'mis_notas.txt' debería estar ahora dentro de 'documen
 ```
 
 ### Prerequisito
-Asegúrate de tener un archivo llamado `mis_notas.txt` en el mismo directorio donde vas a ejecutar este script. Puedes usar el script anterior (`crear_notas.sh`) para crearlo si no existe.
+Asegúrate de tener un archivo llamado `mis_notas.txt` en el mismo directorio donde vas a ejecutar este script. Puedes usar el script anterior (`script3.sh`) para crearlo si no existe.
 
 ### Cómo Ejecutarlo
 
 **Guarda el script:**
-Crea un nuevo archivo llamado `organizar_notas.sh` y pega el código anterior.
+Crea un nuevo archivo llamado `script4.sh` y pega el código anterior.
 
 ```bash
-nano organizar_notas.sh
+nano script4.sh
 ```
 
 **Da permisos de ejecución:**
 
 ```bash
-chmod +x organizar_notas.sh
+chmod +x script4.sh
 ```
 
 **Ejecuta el script:**
 
 ```bash
-./organizar_notas.sh
+./script4.sh
 ```
 
 ### Salida Esperada
