@@ -1,3 +1,11 @@
+# INTRODUCCION
+1. Primero tienes que clonar el repositorio con git clone ...
+2. Despues de clonar tienes que accedar a la carpeta personal.
+3. Antes de ejecutar tienes que dar permisos. chmod +x saludo.sh
+
+
+
+
 # script1.sh
 
 Saldra en pantalla un saludo amistoso en el terminal. 
