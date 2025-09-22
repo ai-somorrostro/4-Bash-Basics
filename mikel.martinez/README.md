@@ -23,3 +23,15 @@ Salida:
 ¿Cuál es tu nombre?
 Mikel
 ¡Hola, Mikel!
+
+## script3.sh
+**Descricion:**
+Este script crea un archivo llamado `mis_notas.txt` y guarda un mensaje dentro usando redirección de salida (`>`).
+
+**Ejecución:**  
+```bash
+./script3.sh
+```
+Salida:
+No se muestra nada en la terminal, pero se crea un archivo llamado mis_notas.txt con el contenido:
+Hoy aprendí a crear archivos con Bash.
