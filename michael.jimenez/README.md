@@ -8,30 +8,22 @@
  Este comando realiza una clonación del repositorio que quieras utilizar. Después del comando git clone deberemos de escribir el URL en formato SSH del repositorio que se encuentra en el apartado Code.
 
 ## Paso 2
- - Despues de clonar el repositorio deberemos de crear una carpeta con la sintaxis nombre.apellido.
-
- ```shell
- mkdir nombre.apellido
- ```
-
-## Paso 3
  - Nos moveremos a la carpeta para poder trabajar dentro de ella.
 
  ```shell
  cd nombre.apellido
  ```
 
-## Paso 4
- - Dentro de la carpeta crearemos los Scripts que necesitemos para completar la tarea.
-
+## Paso 3
+ - Antes de realizar todos los ejercicios, para poder ejecutarlos le tenemos que dar permisos de ejecución. Para ello utilizamos este comando.
  ```shell
- sudo nano ejemplo.sh
+ chmod +x ejercicio1.sh
  ```
- - Antes de realizar todos los ejercicios, para poder ejecutarlos se deberá de utilizar el comando bash.
- - Para poder ejecutar este archivo se debe de usar el comando bash y al lado el nombre del archivo.sh.
+
+ - Despues ejecutamos los scripts con este comando.
 
  ```shell
- bash ejemplo.sh
+ bash ejercicio1.sh
  ```
 
 # INSTRUCCIONES SCRIPTS BASH
