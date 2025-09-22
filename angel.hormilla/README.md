@@ -5,8 +5,8 @@ Utilizar Linux
 # Pasos para ejecutar los scripts
 
 1. Abrir la terminal
-2. clonar el repositorio
-3. cd angel-hormilla
+2. clonar el repositorio usando git clone "ssh del repo"
+3. cd angel-hormilla para abrir la carpeta
 4. bash nombre-del-script (ej. script1.sh, script2.sh ...)
 
 
