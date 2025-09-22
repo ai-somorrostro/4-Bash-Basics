@@ -3,6 +3,26 @@
 
 Este directorio contiene los ejercicios de Bash.
 
+## Pasos iniciales
+
+1. Clonar el repositorio:
+```bash
+git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
+
+Moverse a la carpeta del repositorio:
+
+```bash
+cd 4-Bash-Basics
+```
+
+Entrar en la carpeta personal jon.medina:
+
+```bash
+cd jon.medina
+```
+
+A partir de aquí, seguir las instrucciones de ejecución de cada ejercicio.
+
 ## Instrucciones
 
 1.  Para dar permisos de ejecución a un script:
