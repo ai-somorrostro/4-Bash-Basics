@@ -48,8 +48,11 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 echo "Hola, ¿como vas?"
 
 **Ejecución:**
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script1.sh
+
 **Salida:**
+
 Hola, ¿como vas?
 
 
@@ -72,11 +75,15 @@ read nombre
 echo "¡Hola, $nombre!"
 
 **Ejecución:**
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script2.sh
 
 **Salida:**
+
 ¿Cuál es tu nombre?
+
 clemen
+
 "¡Hola, clemen!"
 
 
@@ -95,6 +102,7 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
 
 **Ejecución:**
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script3.sh
 
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
@@ -102,7 +110,9 @@ user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
 
 **Salida:**
+
 mis_notas.txt  script1.sh  script2.sh  script3.sh
+
 Hoy aprendí a crear archivos con Bash.
 
 
@@ -124,6 +134,7 @@ mkdir documentos
 mv mis_notas.txt documentos/
 
 **Ejecución:**
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script4.sh
 
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
@@ -135,6 +146,9 @@ user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
 
 **Salida:**
+
 documentos  script1.sh  script2.sh  script3.sh  script4.sh
+
 mis_notas.txt
+
 Hoy aprendí a crear archivos con Bash.
