@@ -1,1 +1,0 @@
-Hoy aprendí a crear archivos con Bash.
