@@ -1,5 +1,5 @@
 # Instrucciones
-1 Clonar el repositorio. 
+1 Clonar el repositorio.   
 ```git clone ruta_repo```
 
 2 Entra en la carpeta asier.perez.    
