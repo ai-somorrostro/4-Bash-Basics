@@ -30,7 +30,7 @@ Todos los sistemas Linux modernos ya incluyen las herramientas básicas necesari
 # Clona este repositorio en tu máquina local
 git clone [URL-del-repositorio]
 
-# Ejemplo: git clone https://github.com/usuario/scripts-bash-introduccion.git
+# Ejemplo: git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```
 
 #### Paso 2: Navegar al Directorio
@@ -140,23 +140,7 @@ ls -la *.sh
 
 Este es tu primer script Bash. Su función es muy simple: imprimir un mensaje de bienvenida en la terminal.
 
-### Código del Script
-
-```bash
-#!/bin/bash
-# Este es un script Bash simple
-echo "¡Hola, Estudiantes de Bash!"
-```
-
 ### Cómo Ejecutarlo
-
-**Guarda el script:**
-Crea un nuevo archivo llamado `script1.sh` y pega el código anterior.
-
-```bash
-nano script1.sh
-# Pega el código, guarda (Ctrl+O) y sal (Ctrl+X)
-```
 
 **Da permisos de ejecución:**
 
@@ -181,31 +165,8 @@ chmod +x script1.sh
 
 Este script demuestra cómo interactuar con el usuario, pidiéndole su nombre y luego usándolo para imprimir un saludo personalizado. Introduce el concepto de variables y la lectura de entrada.
 
-### Código del Script
-
-```bash
-#!/bin/bash
-# Este script saluda al usuario con un nombre personalizado.
-
-# Pide al usuario que introduzca su nombre
-echo "¿Cuál es tu nombre?"
-
-# Lee la entrada del usuario y la guarda en una variable llamada 'nombre_usuario'
-read nombre_usuario
-
-# Imprime un saludo personalizado usando la variable
-echo "¡Hola, $nombre_usuario!"
-```
-
 ### Cómo Ejecutarlo
-
-**Guarda el script:**
-Crea un nuevo archivo llamado `script2.sh` y pega el código anterior.
-
-```bash
-nano script2.sh
 ```
-
 **Da permisos de ejecución:**
 
 ```bash
@@ -234,26 +195,7 @@ María
 
 Este script te enseña a crear archivos de texto y a escribir contenido dentro de ellos utilizando el comando `echo` y el operador de redirección de salida `>`.
 
-### Código del Script
-
-```bash
-#!/bin/bash
-# Este script crea un archivo y escribe texto en él.
-
-# Crea o sobrescribe el archivo mis_notas.txt y añade el texto.
-echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
-
-echo "Archivo 'mis_notas.txt' creado con el texto."
-```
-
 ### Cómo Ejecutarlo
-
-**Guarda el script:**
-Crea un nuevo archivo llamado `script3.sh` y pega el código anterior.
-
-```bash
-nano script3.sh
-```
 
 **Da permisos de ejecución:**
 
@@ -285,34 +227,10 @@ cat mis_notas.txt
 
 Este script te introduce a la gestión de archivos y directorios. Primero, crea una nueva carpeta, y luego mueve un archivo existente a esa carpeta.
 
-### Código del Script
-
-```bash
-#!/bin/bash
-# Este script crea una carpeta y mueve un archivo a ella.
-
-# Paso 1: Crear la carpeta 'documentos'
-echo "Creando la carpeta 'documentos'..."
-mkdir documentos
-
-# Paso 2: Mover el archivo 'mis_notas.txt' a la carpeta 'documentos'
-echo "Moviendo 'mis_notas.txt' a 'documentos'..."
-mv mis_notas.txt documentos/
-
-echo "Script completado. 'mis_notas.txt' debería estar ahora dentro de 'documentos'."
-```
-
 ### Prerequisito
 Asegúrate de tener un archivo llamado `mis_notas.txt` en el mismo directorio donde vas a ejecutar este script. Puedes usar el script anterior (`script3.sh`) para crearlo si no existe.
 
 ### Cómo Ejecutarlo
-
-**Guarda el script:**
-Crea un nuevo archivo llamado `script4.sh` y pega el código anterior.
-
-```bash
-nano script4.sh
-```
 
 **Da permisos de ejecución:**
 
