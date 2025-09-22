@@ -9,15 +9,15 @@ Utilizar Linux
 ```bash
 git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```
-4. Abrir la carpeta
+3. Abrir la carpeta
 ```bash
 cd angel-hormilla
 ```
-5. Dar permisos a los scripts
+4. Dar permisos a los scripts
 ```bash
 sudo chmod +x script1.sh
 ```
-7. Ejecutar los scripts (script1.sh, script2.sh ...)
+5. Ejecutar los scripts (script1.sh, script2.sh ...)
 ```bash
 bash script1.sh
 ```
