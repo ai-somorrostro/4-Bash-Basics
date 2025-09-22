@@ -7,3 +7,7 @@ Este script imprime un saludo amistoso en la terminal. La primera línea del scr
 **Ejecución:**  
 ```bash
 ./script1.sh
+
+Salida:
+
+¡Hola, Estudiantes de Bash!
