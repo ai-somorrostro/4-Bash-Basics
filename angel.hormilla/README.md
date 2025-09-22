@@ -13,7 +13,11 @@ git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```bash
 cd angel-hormilla
 ```
-6. Ejecutar los scripts (script1.sh, script2.sh ...)
+5. Dar permisos a los scripts
+```bash
+sudo chmod +x script1.sh
+```
+7. Ejecutar los scripts (script1.sh, script2.sh ...)
 ```bash
 bash script1.sh
 ```
