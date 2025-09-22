@@ -1,3 +1,34 @@
+# Proyecto Bash Basics
+
+## Inicio del proyecto
+
+### 1. Clonar el repositorio
+```bash
+git clone <URL_DEL_REPO>
+cd proyecto-scripts
+
+2. Crear tu rama personal
+git checkout -b mikel.martinez
+
+3. Crear tu carpeta personal
+mkdir mikel.martinez
+cd mikel.martinez
+
+(O Visual Studio)
+
+4. Copiar/crear scripts dentro de tu carpeta
+5. Dar permisos de ejecución a los scripts
+chmod +x script1.sh
+chmod +x script2.sh
+chmod +x script3.sh
+chmod +x script4.sh
+
+6. Ejecutar los scripts
+./script1.sh
+./script2.sh
+./script3.sh
+./script4.sh
+
 ## script1.sh
 **Descripción:**  
 Este script imprime un saludo amistoso en la terminal. La primera línea del script (`#!/bin/bash`) se llama **shebang** y le indica al sistema que use Bash como intérprete.
