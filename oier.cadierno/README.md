@@ -16,39 +16,21 @@ Con este comando clonariamos el repositorio de GitHub, despues deberiamos de esc
 
 ### PASO 2
 
-El siguiente paso seria movernos a la carpeta del repo que hemos clonado, en este caso tenemos que escribir lo siguiente:
+El siguiente paso seria movernos a la carpeta donde estan los ejecutables en el repo, en este caso tenemos que escribir lo siguiente:
 
 ``` shell
-cd 4-Bash-Basics/
+cd 4-Bash-Basics/oier.cadierno
 ```
 
 ### PASO 3
 
-Para seguir avanzando, tenemos que crear nuestra propia carpeta dentro de la del repo que hemos clonado (la cual tiene que tener de nombre "nombre.apellido"), esto lo hariamos de la siguiente manera:
+Para seguir avanzando, tenemos que darle permisos de ejecucion a cada uno de los ejecutables
 
 ``` shell
-mkdir oier.cadierno
+chmod +x script1.sh
 ```
+Despues tenemos que darle permisos a los demas ejecutables de la misma manera.
 
-### PASO 4
-
-En este paso, nos moveriamos a la carpeta creada, con el comando de antes:
-
-``` shell
-cd oier.cadierno/
-```
-
-Una vez dentro empezariamos a crear los archivos que nos piden, en este caso nos piden un archivo README.md y varios ejecutables bash, para ello tenemos que escribir lo siguiente:
-
-``` shell
-nano README.md
-```
-
-Con este comando creamos el archivo y lo llamamos README.md. Luego para crear los ejecutables bash tendriamos que hacer lo mismo:
-
-``` shell
-nano script1.sh
-```
 
 ### script1.sh:
 
