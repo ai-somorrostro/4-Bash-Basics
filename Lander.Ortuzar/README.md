@@ -43,3 +43,16 @@ bash script3.sh
 
 **Salida:**
 Te creara automaticamente un nuevo archivo llamado mis_notas.txt
+
+# script4.sh
+
+Te creara una nueva carpeta y con el comando mv te mueve el archivo a la nueva carpeta
+
+**Ejecución:**
+
+```bash
+bash script4.sh
+```
+
+**Salida:**
+Te creara automaticamente la nueva carpeta y te movera el archivo. 
