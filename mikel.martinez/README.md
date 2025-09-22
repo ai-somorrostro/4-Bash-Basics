@@ -35,3 +35,14 @@ Este script crea un archivo llamado `mis_notas.txt` y guarda un mensaje dentro u
 Salida:
 No se muestra nada en la terminal, pero se crea un archivo llamado mis_notas.txt con el contenido:
 Hoy aprendí a crear archivos con Bash.
+
+## script4.sh
+**Descripción:**  
+Este script crea un directorio llamado `documentos` y mueve el archivo `mis_notas.txt` dentro de él. Usa los comandos `mkdir` y `mv`.
+
+**Ejecución:**  
+```bash
+./script4.sh
+```
+Salida:
+No se muestra nada en la terminal, pero el archivo mis_notas.txt ahora está dentro de la carpeta documentos.
