@@ -5,10 +5,18 @@ Utilizar Linux
 # Pasos para ejecutar los scripts
 
 1. Abrir la terminal
-2. clonar el repositorio usando git clone "ssh del repo"
-3. cd angel-hormilla para abrir la carpeta
-4. bash nombre-del-script (ej. script1.sh, script2.sh ...)
-
+2. clonar el repositorio usando 
+```bash
+git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
+```
+4. Abrir la carpeta
+```bash
+cd angel-hormilla
+```
+6. Ejecutar los scripts (script1.sh, script2.sh ...)
+```bash
+bash script1.sh
+```
 
 # Documentación de Scripts Bash
 
