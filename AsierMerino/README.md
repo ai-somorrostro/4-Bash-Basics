@@ -1,83 +1,73 @@
-Guía de uso de los scripts
+## Requisitos 🐧
 
-Este repositorio contiene 4 scripts de ejemplo escritos en Bash.
-A continuación se explica cómo ejecutarlos paso a paso.
+Este repositorio contiene varios **scripts de ejemplo en Bash** para practicar la creación y ejecución de programas simples en Linux/macOS (o en Windows con **WSL**).
 
-1. Requisitos previos
+-----
 
-Tener un sistema con Linux o macOS (o Windows con WSL habilitado).
+## Primeros Pasos 🚀
 
-Tener instalado Bash (ya viene por defecto en la mayoría de sistemas).
+1.  **Clonar el repositorio:** Abre tu terminal y clona el repositorio con el siguiente comando:
 
-Dar permisos de ejecución a los archivos .sh.
+    ```bash
+    git clone https://github.com/nombre-de-usuario/nombre-del-repo.git
+    ```
 
+2.  **Moverte al directorio del proyecto:** Una vez clonado, navega al directorio del repositorio:
+
+    ```bash
+    cd nombre-del-repo
+    ```
+
+-----
+
+## Permisos y Ejecución 🛠️
+
+Antes de ejecutar los scripts, debes asegurarte de que tienen permisos de ejecución. Para ello, puedes usar el comando `ls -l` para verificar los permisos y `chmod` para añadirlos si es necesario.
+
+### 1\. Comprobar los permisos
+
+En la terminal, ejecuta el siguiente comando para ver los permisos de todos los archivos `.sh`:
+
+```bash
+ls -l *.sh
+```
+
+La salida debería mostrar una `x` en los permisos para indicar que son ejecutables. Por ejemplo: `-rwxr-xr-x`.
+
+### 2\. Dar permisos de ejecución (si no los tienen)
+
+Si alguno de los archivos no tiene la `x`, puedes dárselos con el siguiente comando:
+
+```bash
 chmod +x EJ1.sh EJ2.sh EJ3.sh EJ4.sh
+```
 
-2. Ejecución de cada script
-EJ1.sh
+-----
 
-Muestra un saludo básico.
+## Descripción y uso de los Scripts 📜
 
-./EJ1.sh
+A continuación se explica qué hace cada script y cómo ejecutarlo.
 
+### EJ1.sh
 
-Salida esperada:
+Este script muestra un simple mensaje de "Hola mundo" en la terminal.
 
-Hola mundo
+  * **Ejecutar:** `./EJ1.sh`
 
-EJ2.sh
+### EJ2.sh
 
-Pide al usuario que ingrese su nombre y lo saluda.
+Este script te pide que ingreses tu nombre y luego te saluda personalmente.
 
-./EJ2.sh
+  * **Ejecutar:** `./EJ2.sh`
 
+### EJ3.sh
 
-Ejemplo de ejecución:
+Este script te pide una frase y guarda lo que escribas en un nuevo archivo llamado `mis_notas.txt`.
 
-ingresa tu nombre
->> Ana
-Hola buenas tardes Ana
+  * **Ejecutar:** `./EJ3.sh`
 
-EJ3.sh
+### EJ4.sh
 
-Solicita una frase al usuario y la guarda en un archivo llamado mis_notas.txt.
+Este script te pide el nombre para una nueva carpeta, la crea y luego mueve el archivo `mis_notas.txt` (creado por `EJ3.sh`) dentro de esa carpeta.
 
-./EJ3.sh
-
-
-Ejemplo de ejecución:
-
-Escribe una frase:
->> Estoy aprendiendo bash
-Tu frase se guardó en mis_notas.txt
-
-
-Luego puedes comprobar el archivo creado con:
-
-cat mis_notas.txt
-
-EJ4.sh
-
-Crea una carpeta con el nombre que elijas y mueve dentro de ella el archivo mis_notas.txt.
-
-./EJ4.sh
-
-
-Ejemplo de ejecución:
-
-Escribe el nombre de una carpeta:
->> notas
-La carpeta notas se creó con éxito
-El archivo mis_notas.txt se movió a la carpeta notas
-
-3. Nota importante
-
-El orden de ejecución recomendado es:
-
-EJ1.sh (solo saludo)
-
-EJ2.sh (interacción con el nombre)
-
-EJ3.sh (crea el archivo mis_notas.txt)
-
-EJ4.sh (mueve el archivo a la carpeta elegida)
+  * **Ejecutar:** `./EJ4.sh`
