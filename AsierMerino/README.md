@@ -1,10 +1,10 @@
-## Requisitos 🐧
+## Requisitos 
 
 Este repositorio contiene varios **scripts de ejemplo en Bash** para practicar la creación y ejecución de programas simples en Linux/macOS (o en Windows con **WSL**).
 
 -----
 
-## Primeros Pasos 🚀
+## Primeros Pasos 
 
 1.  **Clonar el repositorio:** Abre tu terminal y clona el repositorio con el siguiente comando:
 
@@ -20,7 +20,7 @@ Este repositorio contiene varios **scripts de ejemplo en Bash** para practicar l
 
 -----
 
-## Permisos y Ejecución 🛠️
+## Permisos y Ejecución 
 
 Antes de ejecutar los scripts, debes asegurarte de que tienen permisos de ejecución. Para ello, puedes usar el comando `ls -l` para verificar los permisos y `chmod` para añadirlos si es necesario.
 
@@ -44,7 +44,7 @@ chmod +x EJ1.sh EJ2.sh EJ3.sh EJ4.sh
 
 -----
 
-## Descripción y uso de los Scripts 📜
+## Descripción y uso de los Scripts 
 
 A continuación se explica qué hace cada script y cómo ejecutarlo.
 
