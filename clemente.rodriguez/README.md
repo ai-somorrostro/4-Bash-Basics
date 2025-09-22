@@ -1,7 +1,5 @@
 # 4 Bash Basics
 
-### documentación
-
 # script1.sh
 
 Es un script que, al ejecutar el comando bash con la ruta del script, por terminal devuelve texto
