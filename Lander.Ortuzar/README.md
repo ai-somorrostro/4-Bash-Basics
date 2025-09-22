@@ -3,7 +3,7 @@
 
 2. Despues de clonar tienes que accedar a la carpeta personal de la siguiente manera. `cd 4-Bash-Basics/Lander.Ortuzar`
 
-3. Antes de ejecutar tienes que dar permisos. `chmod +x nombrescript.`
+3. Antes de ejecutar tienes que dar permisos. `chmod +x nombrescript.sh`
 
 
 
