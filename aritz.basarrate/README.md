@@ -18,7 +18,7 @@ Una vez dentro de nuestra Maquina Linux:
 Una vez dentro de la carpeta tendremos que asegurarnos que podemos 
 abrir estos scripts. Para conseguir el permiso de ejecución tenemos que
 ejecutar el siguente comando:
-```chmod +x "nombrearchivo"```
+```chmod +x script1.sh```
 
 Como podemos comprobar con un "ls" , este son los ejecutables que contiene este repositorio:
 -script1.sh
