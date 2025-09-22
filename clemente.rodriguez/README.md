@@ -44,17 +44,23 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 ## Codigo
 
 **Código:**
+
+```bash
 #!bin/bash/
 echo "Hola, ¿como vas?"
+```
 
 **Ejecución:**
 
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script1.sh
+```bash
+bash script1.sh
+```
 
 **Salida:**
 
+```bash
 Hola, ¿como vas?
-
+```
 
 
 # script2.sh
@@ -65,7 +71,7 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 ## Codigo
 
 **Código:**
-
+```bash
 #!/bin/bash
 # Solicita el nombre al usuario
 echo "¿Cuál es tu nombre?"
@@ -73,19 +79,21 @@ read nombre
 
 # Imprime el saludo personalizado
 echo "¡Hola, $nombre!"
+```
 
 **Ejecución:**
 
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script2.sh
+```bash
+bash script2.sh
+```
 
 **Salida:**
 
+```bash
 ¿Cuál es tu nombre?
-
 clemen
-
 "¡Hola, clemen!"
-
+```
 
 
 # script3.sh
@@ -97,24 +105,24 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 
 **Código:**
 
+```bash
 #!/bin/bash
 # Crear el archivo y escribir el texto
 echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
-
+```
 **Ejecución:**
 
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script3.sh
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
+```bash
+bash script3.sh
+ls
+cat mis_notas.txt
+```
 
 **Salida:**
-
+```bash
 mis_notas.txt  script1.sh  script2.sh  script3.sh
-
 Hoy aprendí a crear archivos con Bash.
-
+```
 
 # script4.sh
 
@@ -125,6 +133,7 @@ si no ejecuta quizas tengas que darle permisos, introduce el comando: chmod +x [
 
 **Código:**
 
+```bash
 #!/bin/bash
 
 # Crear la carpeta llamada 'documentos'
@@ -132,23 +141,22 @@ mkdir documentos
 
 # Mover el archivo 'mis_notas.txt' a la carpeta 'documentos'
 mv mis_notas.txt documentos/
+```
 
 **Ejecución:**
 
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script4.sh
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cd documentos
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
-
-user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
+```bash
+bash script4.sh
+ls
+cd documentos
+ls
+cat mis_notas.txt
+```
 
 **Salida:**
 
+```bash
 documentos  script1.sh  script2.sh  script3.sh  script4.sh
-
 mis_notas.txt
-
 Hoy aprendí a crear archivos con Bash.
+```
