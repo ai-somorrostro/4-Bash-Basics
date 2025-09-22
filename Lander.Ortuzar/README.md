@@ -1,7 +1,9 @@
 # INTRODUCCION
-1. Primero tienes que clonar el repositorio con git clone ...
-2. Despues de clonar tienes que accedar a la carpeta personal.
-3. Antes de ejecutar tienes que dar permisos. chmod +x saludo.sh
+1. Primero tienes que clonar el repositorio con `git clone git@github.com:ai-somorrostro/4-Bash-Basics.git`
+
+2. Despues de clonar tienes que accedar a la carpeta personal de la siguiente manera. `cd 4-Bash-Basics/Lander.Ortuzar`
+
+3. Antes de ejecutar tienes que dar permisos. `chmod +x nombrescript.`
 
 
 
