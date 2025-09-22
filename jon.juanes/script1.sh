@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hola, soy Jon y este es mi script 1"
+echo "¡Hola, Estudiantes de Bash!"
