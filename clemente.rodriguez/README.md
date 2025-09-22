@@ -96,7 +96,9 @@ echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
 
 **Ejecución:**
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script3.sh
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
 
 **Salida:**
@@ -123,9 +125,13 @@ mv mis_notas.txt documentos/
 
 **Ejecución:**
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ bash script4.sh
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cd documentos
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ ls
+
 user@user-VirtualBox:~/4-Bash-Basics/clemente.rodriguez$ cat mis_notas.txt
 
 **Salida:**
