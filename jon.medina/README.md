@@ -1,15 +1,22 @@
+
 ### Scripts Bash - Jon Medina
 
-Este directorio contiene los ejercicios de introducción a Bash realizados por Jon Medina.
+Este directorio contiene los ejercicios de Bash.
 
 ## Instrucciones
 
-Dar permisos de ejecucción para ejecutar cada script
-comando : chmod +x {nombre script}.sh
-Comando ejecucción Ejemplo: ./ej.sh
+1.  Para dar permisos de ejecución a un script:
+    ```bash
+    chmod +x {nombre_script}.sh
+    ```
+2.  Para ejecutar un script (ejemplo):
+    ```bash
+    ./ej.sh
+    ```
 
-###Estructura Completa
+### Estructura Completa
 
+```
 jon.medina
 ├── ej1.sh
 ├── ej2.sh
@@ -18,35 +25,29 @@ jon.medina
 ├── README.md
 └── documentos
     └── mis_notas.txt
+```
 
-
-### Descripción de lo Scripts
+### Descripción de los Scripts
 
 #### Ejercicio 1
 
-./ej1.sh 
-
-Resultado:"Hola Mundo Bash"
+-   **Comando:** `./ej1.sh`
+-   **Resultado esperado:** `"Hola Mundo Bash"`
 
 #### Ejercicio 2
 
-./ej2.sh
+-   **Comando:** `./ej2.sh`
+-   **Interacción:** Solicita tu nombre.
+-   **Ejemplo de salida:** `Cual es tu nombre / insertas tu nombre`
 
-Resultado: Cual es tu nombre  / insertas tu nombre / Resultado en pantalla: Hola,{tu nombre}!
- 
 #### Ejercicio 3
 
-./ej3.sh
-cat mis_notas.txt
+-   **Comando:** `./ej3.sh`
+-   **Acción:** Este script probablemente opera sobre `mis_notas.txt`.
+-   **Contenido de `mis_notas.txt` (ejemplo tras ejecución):** `Hoy aprendí a crear archivos con Bash`
 
-Resultado: Hoy aprendí a crear archivos con Bash.
+#### Ejercicio 4
 
-#### Ejercicio 4 
-
-./ej4.sh
-ls documentos
-
-Resultado: mis_notas.txt            
-
-
-
+-   **Comando:** `./ej4.sh`
+-   **Acción:** Lista el contenido del directorio `documentos`.
+-   **Ejemplo de salida:** `mis_notas.txt`
