@@ -1,54 +1,86 @@
-# 4 Bash Basics
-## Normas del Proyecto
-1. Cada uno trabajara en su propia rama con su nombre y apellido ej: `sergio.garcia`
-2. Los scripts deben crearse en una carpeta con tu nombre.apellido ej: sergio.garcia
-3. SOLO un script por commit
-4. Cada script tendrá uno o varios commits
-5. En el README adjuntareis las instrucciones de como ejecutar los scripts
-6. Pull Request. Una vez completados todos tus scripts, deberás realizar un pull request contra master para integrar tus cambios.
+# Prerrequisitos
 
-## Estructura del Proyecto
+Utilizar Linux
 
-```
-proyecto-scripts/
-├── README.md
-├── sergio.garcia/
-│   ├── README.md
-│   ├── script1.sh
-│   ├── script2.sh
-│
-```
+# Pasos para ejecutar los scripts
 
-## Cómo Contribuir
-
-
-### 1. Crea tu propia rama
-### 2. Crear tu carpeta
+1. Abrir la terminal
+2. clonar el repositorio usando 
 ```bash
-mkdir tu_nombre.tu_apellido
-cd tu_nombre.tu_apellido
+git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```
-o usa VScode... :shipit:
+3. Abrir la carpeta
+```bash
+cd samuel.rivera
+```
+4. Dar permisos de ejecucución a los scripts
+```bash
+sudo chmod +x script1.sh
+```
+5. Ejecutar los scripts
+```bash
+bash script1.sh
+```
 
-### 3. Empieza a generar los scripts y la documentacion
+# Documentación de Scripts Bash
 
-
-
-### Ejemplo de documentación
-
-# script1.sh
-
-Descripción del script...
+## **script1.sh**
+Script básico que muestra un mensaje de saludo a los estudiantes de Bash. Es un ejemplo simple de uso del comando `echo` para mostrar texto en la terminal.
 
 **Ejecución:**
-
 ```bash
 bash script1.sh
 ```
 
 **Salida:**
 ```bash
-texto de la salida
+¡Hola, Estudiantes de Bash!
 ```
 
-## **EL REPO PERMANECERA ABIERTO HASTA EL LUNES 25/09/2025**
+---
+
+## **script2.sh**
+Script interactivo que solicita al usuario su nombre y luego muestra un saludo personalizado. Demuestra el uso de `read` para capturar entrada del usuario y el uso de variables en Bash.
+
+**Ejecución:**
+```bash
+bash script2.sh
+```
+
+**Salida:**
+```bash
+¿Cuál es tu nombre?
+Juan
+¡Hola, Juan!
+```
+
+---
+
+## **script3.sh**
+Script que crea un archivo llamado 'mis_notas.txt' y escribe texto dentro de él. Demuestra el uso de redirección de salida (`>`) para escribir contenido a un archivo y crear archivos desde la línea de comandos.
+
+**Ejecución:**
+```bash
+bash script3.sh
+```
+
+**Salida:**
+```bash
+Archivo 'mis_notas.txt' creado con éxito.
+```
+
+---
+
+## **script4.sh**
+Script para gestión de archivos y directorios. Crea una carpeta llamada 'documentos' y mueve el archivo 'mis_notas.txt' (creado previamente por script3.sh) dentro de esa carpeta. Demuestra el uso de `mkdir` para crear directorios y `mv` para mover archivos.
+
+**Ejecución:**
+```bash
+bash script4.sh
+```
+
+**Salida:**
+```bash
+El archivo 'mis_notas.txt' fue movido a la carpeta 'documentos'.
+```
+
