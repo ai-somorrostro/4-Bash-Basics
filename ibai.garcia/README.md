@@ -1,122 +1,130 @@
-# Repositorio de Scripts Bash 
+# Repositorio de Scripts Bash
 
 ¡Bienvenido a este repositorio! Aquí encontrarás varios scripts de Bash básicos para practicar comandos fundamentales en Linux.
 
-## Requisitos 
+## Requisitos
 
 Este repositorio está diseñado para ser utilizado en un entorno **Linux**.
 
 ---
 
-##  Guía de uso
+## Guía de uso
 
 Sigue estos sencillos pasos para empezar a usar los scripts.
 
 ### 1. Clonar el repositorio
 
-Primero, clona este repositorio en tu máquina local usando git clone:
+Primero, clona este repositorio en tu máquina local usando `git clone`:
 
 ```bash
-    git clone https://github.com/nombre-de-usuario/nombre-del-repo.git
-
+git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```
-Moverte al directorio del proyecto: Una vez clonado, navega al directorio del repositorio:
 
+### 2. Moverse al directorio del proyecto
 
-    cd nombre-del-repo
+Una vez clonado, navega al directorio del repositorio:
 
-
-
------
-
-# Permisos y Ejecución
-
-En primer lugar, antes de la ejecucion de los scripts, hay que asegurare de que tenga los permisos de ejecución.  
-Para verificar los permisos escribe en la terminal:
-
-ls -l *.sh
-De esta manera se observan listados los permisos de todos los archivos `.sh`
-
--rwxr-xr-x significa que el propietario puede leer, escribir y ejecutar, mientras que el grupo y los demás usuarios solo pueden leer y ejecutar, pero no escribir.
-
-Para poder asignarle los permisos escribe en la terminal:
-
-hmod +x EJERCICIO1.sh EJERCICIO2.sh EJERCICIO3.sh EJERCICIO4.sh
+```bash
+cd 4-Bash-Basics
+```
 
 ---
 
-# EJERCICIO1.sh 
+## Permisos y Ejecución
 
-Creación de un script, comando echo, permisos de ejecución,
-el shebang.
+Antes de la ejecución de los scripts, asegúrate de que tengan permisos de ejecución.  
+Para verificar los permisos, escribe en la terminal:
+
+```bash
+ls -l *.sh
+```
+
+De esta manera se listan los permisos de todos los archivos `.sh`.
+
+El modo `-rwxr-xr-x` significa que el propietario puede leer, escribir y ejecutar, mientras que el grupo y los demás usuarios solo pueden leer y ejecutar, pero no escribir.
+
+Para asignar permisos de ejecución, escribe en la terminal:
+
+```bash
+chmod +x EJERCICIO1.sh EJERCICIO2.sh EJERCICIO3.sh EJERCICIO4.sh
+```
+
+---
+
+# EJERCICIO1.sh
+
+Creación de un script, comando `echo`, permisos de ejecución, y el shebang.
 
 **Ejecución:**
 
-```bas
-
+```bash
 #!/bin/bash
 echo "¡Hola, Mundo!"
+```
+
+**Salida:**
 
 ```
-**Salida:**
-Hola mundo
+¡Hola, Mundo!
+```
+
+---
 
 # EJERCICIO2.sh
 
-Variables, comando read (entrada de usuario).
+Variables y comando `read` (entrada de usuario).
 
-**Ejecución**
+**Ejecución:**
 
+```bash
 #!/bin/bash
-echo "¡Hola, $nombre!"
 read nombre
+echo "¡Hola, $nombre!"
+```
 
 **Salida:**
 
+```
 ¿Cuál es tu nombre?
-
 Ibai
-
 ¡Hola, Ibai!
+```
+
+---
 
 # EJERCICIO3.sh
 
-Redirección de salida (>) para crear un archivo.
+Redirección de salida (`>`) para crear un archivo.  
 Objetivo: Crear un script Bash que ponga un mensaje dentro de un nuevo archivo.
 
 **Ejecución:**
 
+```bash
 #!/bin/bash
-
-Crear un archivo y escribir texto dentro
+# Crear un archivo y escribir texto dentro
 echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
+```
 
 **Salida:**
 
+```
 Hoy aprendí a crear archivos con Bash.
+```
+
+---
 
 # EJERCICIO4.sh
 
-Creación de directorios (mkdir) y movimiento de archivos (mv).
-Objetivo: Crear un script Bash que cree una carpeta y mueva un archivo a esa
-carpeta.
+Creación de directorios (`mkdir`) y movimiento de archivos (`mv`).  
+Objetivo: Crear un script Bash que cree una carpeta y mueva un archivo a esa carpeta.
 
 **Ejecución:**
 
+```bash
 #!/bin/bash
-Crear una carpeta llamada "documentos"
+# Crear una carpeta llamada "documentos"
 mkdir documentos
 
-Mover el archivo mis_notas.txt a la carpeta "documentos"
+# Mover el archivo mis_notas.txt a la carpeta "documentos"
 mv mis_notas.txt documentos/
-
-
-
-
-
-
-
-
-
-
-
+```
