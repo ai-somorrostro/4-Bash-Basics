@@ -2,10 +2,10 @@
 
 ## Inicio del proyecto
 
-### 1. Clonar el repositorio
+### 1. Clonar el repositorio y entrar en ella
 ```bash
-git clone <URL_DEL_REPO>
-cd Tu ruta
+git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
+cd ~/4-Bash-Basics
 ```
 
 ### 2. Crear tu rama personal
@@ -13,7 +13,7 @@ cd Tu ruta
 git checkout -b mikel.martinez
 ```
 
-### 3. Crear tu carpeta personal
+### 3. Crear tu carpeta personal y entrar 
 ```bash
 mkdir mikel.martinez
 cd mikel.martinez
@@ -21,6 +21,7 @@ cd mikel.martinez
 (O Visual Studio)
 
 ### 4. Copiar/crear scripts dentro de tu carpeta
+
 ### 5. Dar permisos de ejecución a los scripts
 ```bash
 chmod +x script1.sh
@@ -31,12 +32,12 @@ chmod +x script4.sh
 
 ### 6. Ejecutar los scripts
 ```bash
-./script1.sh
-./script2.sh
-./script3.sh
-./script4.sh
+bash script1.sh
+bash script2.sh
+bash script3.sh
+bash script4.sh
 ```
-
+ 
 ## script1.sh
 **Descripción:**  
 Este script imprime un saludo amistoso en la terminal. La primera línea del script (`#!/bin/bash`) se llama **shebang** y le indica al sistema que use Bash como intérprete.
