@@ -17,7 +17,7 @@ Sigue estos sencillos pasos para empezar a usar los scripts.
 Primero, clona este repositorio en tu máquina local usando `git clone`:
 
 ```bash
-git@github.com:ai-somorrostro/4-Bash-Basics.git
+git clone git@github.com:ai-somorrostro/4-Bash-Basics.git
 ```
 
 ### 2. Moverse al directorio del proyecto
