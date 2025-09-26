@@ -20,22 +20,14 @@ cd mikel.martinez
 ```
 (O Visual Studio)
 
-### 4. Copiar/crear scripts dentro de tu carpeta
-
-### 5. Dar permisos de ejecución a los scripts
+### 4. Dar permisos de ejecución a los scripts
 ```bash
 chmod +x script1.sh
-chmod +x script2.sh
-chmod +x script3.sh
-chmod +x script4.sh
 ```
 
-### 6. Ejecutar los scripts
+### 5. Ejecutar los scripts
 ```bash
 bash script1.sh
-bash script2.sh
-bash script3.sh
-bash script4.sh
 ```
  
 ## script1.sh
