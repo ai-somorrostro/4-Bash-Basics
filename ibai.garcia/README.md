@@ -56,7 +56,9 @@ chmod +x EJERCICIO1.sh EJERCICIO2.sh EJERCICIO3.sh EJERCICIO4.sh
 Creación de un script, comando `echo`, permisos de ejecución, y el shebang.
 
 **Ejecución:**
-
+```bash
+./script1.sh
+```
 ```bash
 #!/bin/bash
 echo "¡Hola, Mundo!"
