@@ -52,4 +52,3 @@ texto de la salida
 ```
 
 ## **EL REPO PERMANECERA ABIERTO HASTA EL LUNES 25/09/2025**
-
