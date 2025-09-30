@@ -15,7 +15,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          EXPECTED_USERS=("Asier-Merino" 
+          EXPECTED_USERS=(
+          "Asier-Merino" 
           "clemente-rodriguez" 
           "aimar-sarachaga" 
           "ibai-garcia" 
@@ -28,8 +29,13 @@ jobs:
           "iker-iglesias"
           "iker-ortiz0225"
           "jon-juanes"
-          "aritz-basarrate"
           "samuel-rivera05"
+          "lander-ortuzar"
+          "mikel-martinez05"
+          "haimar-alvarez"
+          "xabier-vila"
+          "oier-cadierno"
+          "aritz-basarrate"
           )
           
           # Obtener usuarios que han mergeado PRs
