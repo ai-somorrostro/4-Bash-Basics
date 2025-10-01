@@ -7,6 +7,6 @@ on:
 
 jobs:
   check-merge:
-    uses: tu-org/workflows/.github/workflows/merge-tracker.yaml@master
+    uses: ai-somorrostro/workflows/.github/workflows/merge-tracker.yaml@master
     with:
       expected-users: ${{ vars.EXPECTED_USERS }}
