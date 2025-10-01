@@ -7,4 +7,4 @@ on:
 
 jobs:
   check-merge:
-    uses: tu-org/org-workflows/.github/workflows/merge-tracker.yml@main
+    uses: ai-somorrostro/workflows/.github/workflows/merge-tracker.yaml@mater
