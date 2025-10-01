@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Pedir el nombre del usuario
@@ -6,3 +7,4 @@ read nombre
 
 # Saludar al usuario usando su nombre
 echo "¡Hola, $nombre!"
+
