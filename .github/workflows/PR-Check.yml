@@ -9,4 +9,4 @@ jobs:
   check-merge:
     uses: ai-somorrostro/workflows/.github/workflows/merge-tracker.yaml@master
     secrets:
-      GH_TOKEN: ${{ secrets.workflows }}
+      GH_TOKEN: ${{ secrets.WORKFLOWS }}
