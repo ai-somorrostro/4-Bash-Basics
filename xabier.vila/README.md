@@ -1,131 +1,160 @@
-Prerequisitos:
-1- Instalar Ubuntu
-2- Clonar el repo, con el comando (GIT)
-3- Una vez clonado nos creamos la rama nuestra personal
-4- Dentro de esta crearemos nuestra carpeta personal que utilizaremos para poner los s>
+# Guía de Iniciación a los Scripts de Bash
 
+Esta guía te va ha proporcionar los pasos esenciales para configurar tu entorno Linux y ejecutar una serie de scripts básicos en Bash. Aprenderás desde la configuración inicial hasta la interacción con archivos y directorios.
 
-Ejercicio 1:
-Primera línea: #!/bin/bash
+## Tabla de Contenidos
 
-Esta línea se llama shebang  indica al sistema operativo
-que debe usar el intérprete de Bash para ejecutar el script.
+1.  Requisitos del Sistema
+2.  Configuración del Entorno
+    *   Clonación del Repositorio
+    *   Acceso al Directorio de Scripts
+    *   Establecer Permisos de Ejecución
+3.  Análisis y Ejecución de Scripts
+    *   script1.sh: El Clásico "Hola Mundo"
+    *   script2.sh: Interacción Básica
+    *   script3.sh: Redirección de Salida
+    *   script4.sh: Gestión de Archivos y Directorios
 
-Ejercicio 2:
-echo "¿Cuál es tu nombre?"
-Muestra un mensaje en pantalla para pedir al usuario que ingrese su nombre.
+---
 
+## 1. Requisitos del Sistema
 
-echo "¡Hola, $nombre!"
-Imprime un saludo personalizado usando el valor almacenado
-en la variable nombre. El símbolo $ se usa para acceder al contenido de una variable.
+Para comenzar con estos ejercicios, es fundamental contar con un entorno Linux. Esto puede ser:
 
-Ejercicio 3:
+*   Un sistema operativo Linux instalado directamente en tu máquina.
+*   Una máquina virtual con alguna distribución Linux (ej. Ubuntu, Debian).
 
-echo "Hoy aprendí a crear archivos con Bash."
-Este comando imprime el texto en la terminal.
+Una vez que tengas tu entorno Linux listo, podemos proceder con la configuración y los ejercicios.
 
-El símbolo >
-Es un operador de redirección que envía la salida del comando hacia un archivo. En est>
+---
 
+## 2. Configuración del Entorno
 
-Ejercicio 4:
+A continuación, se detallan los pasos para preparar tu máquina Linux para los scripts.
 
-mkdir -p documentos
+### Clonación del Repositorio
 
-mkdir significa make directory (crear directorio o carpeta).
+El primer paso es obtener los archivos de los ejercicios desde GitHub.
 
-La opción -p le indica a mkdir que cree la carpeta solo si no existe y que no muestre >
+1.  Abre una terminal en tu máquina Linux.
+2.  Utiliza el comando 'git clone' seguido de la URL SSH del repositorio para descargarlo:
 
-En este caso, creamos una carpeta llamada documentos en el directorio actual.
+    ```
+    git clone "git@github.com:ai-somorrostro/4-Bash-Basics.git"
+    ```
+    Este comando descargará todos los contenidos del repositorio en un nuevo directorio dentro de tu ubicación actual.
 
-mv mis_notas.txt documentos/
+### Acceso al Directorio de Scripts
 
-mv significa move (mover).
+Una vez clonado el repositorio, necesitas navegar al subdirectorio específico donde se encuentran los scripts de este ejercicio.
 
-Con este comando movemos archivos o  carpetas de un lugar a otro.
+*   Usa el comando 'cd' (change directory) para acceder a la ruta indicada:
 
-Aquí, mueve el archivo mis_notas.txt dentro de la carpeta documentos
+    ```
+    cd 4-Bash-Basics/xabier.vila
+    ```
 
-1 Instalamos Linux
-Ve al sitio oficial: https://ubuntu.com/download
-Descarga la versión Ubuntu Desktop (recomendado: versión LTS)
+### Establecer Permisos de Ejecución
 
+Para poder ejecutar los scripts, es necesario otorgarles permisos de ejecución. Esto solo se necesita hacer una vez por script.
 
+*   Para el primer script (script1.sh), usa el siguiente comando:
 
-2 Clonamos el repositorio para poder trabajar sobre el.
+    ```
+    chmod +x script1.sh
+    ```
+    Deberás repetir este comando para cada uno de los archivos .sh que vayas a ejecutar (script2.sh, script3.sh, script4.sh).
 
-Tener Git instalado en tu sistema. Si no lo tienes, instálalo con:
+---
 
-sudo apt update
-sudo apt install git
+### script1.sh:
 
-Abre la terminal.
+Este es un script introductorio que simplemente muestra un mensaje de texto en la terminal.
 
-Ve al directorio donde quieras guardar el proyecto
+*   **Contenido:**
+    ```
+    #!/bin/bash
+    echo "¡Hola, Estudiantes de Bash!"
+    ```
+*   **Explicación:**
+    *   'echo "¡Hola, Estudiantes de Bash!"': El comando 'echo' es fundamental para imprimir cadenas de texto en la salida estándar (normalmente, la terminal).
 
-Usa el siguiente comando para clonar el repositorio:
+*   **Ejecución:**
+    ```
+    ./script1.sh
+    ```
+    *   **Resultado esperado:**
+        ```
+        ¡Hola, Estudiantes de Bash!
+        ```
 
-git clone https://github.com/usuario/nombre-del-repositorio.git
+### script2.sh: 
 
+Este script demuestra cómo solicitar información al usuario y luego utilizarla en la salida.
 
-3 Nos movemos al repositorio clonado
+*   **Contenido:**
+    ```
+    #!/bin/bash
+    echo "¿Cuál es tu nombre?"
+    read nombre
+    echo "Hola $nombre"
+    ```
+*   **Explicación:**
+    *   'echo "¿Cuál es tu nombre?"': Muestra una pregunta al usuario.
+    *   'read nombre': El comando 'read' pausa la ejecución del script, esperando que el usuario introduzca texto y presione Enter. El texto introducido se almacena en la variable 'nombre'.
+    *   'echo "Hola $nombre"': Imprime un saludo. El símbolo '$' antes de 'nombre' indica que se debe usar el *valor* almacenado en la variable 'nombre'. Si el usuario introduce "Ana", la salida será "Hola Ana".
 
-Usa el comando cd (change directory) para entrar a la carpeta del repositorio: 
+*   **Ejecución:**
+    ```
+    ./script2.sh
+    ```
 
-cd nombre-del-repositorio
+### script3.sh:
 
+Este script introduce el concepto de redirección de salida, permitiendo guardar la salida de un comando directamente en un archivo.
 
-## Script 1
-#! le dice al sistema que use el intérprete que sigue para ejecutar el script.
-/bin/bash es la ruta del intérprete de Bash en muchos sistemas Linux/Unix.
+*   **Contenido:**
+    ```
+    #!/bin/bash
+    echo "hola" > hola.txt
+    ```
+*   **Explicación:**
+    *   'echo "hola"': Genera la cadena de texto "hola".
+    *   '>': Este símbolo es el operador de redirección de salida. Envía la salida del comando 'echo' (en este caso, "hola") al archivo especificado en lugar de mostrarla en la terminal.
+    *   'hola.txt': Es el nombre del archivo donde se guardará la salida. Si 'hola.txt' no existe, se creará. Si ya existe, su contenido será **sobrescrito** por completo.
+*   **Verificación:**
+    Después de ejecutar el script, puedes ver el contenido del archivo 'hola.txt' con:
+    ```
+    cat hola.txt
+    ```
+    *   **Contenido esperado de 'hola.txt'**:
+        ```
+        hola
+        ```
 
-Por lo que esta linea indica ejecuta este script utilizando el interprete /bin/bash.
+### script4.sh:
 
-echo "¡Hola, Estudiantes de Bash!
+Este script muestra cómo crear directorios y mover archivos entre ellos.
 
-Cuando ejecutemos este script hacemos que aparezca este texto en pantalla.
+*   **Contenido:**
+    ```
+    #!/bin/bash
+    mkdir -p documentos_scripts
+    mv hola.txt documentos_scripts
+    ```
+*   **Explicación:**
+    *   'mkdir -p documentos_scripts': El comando 'mkdir' se utiliza para crear directorios. La opción '-p' (parents) es muy útil, ya que permite crear directorios anidados si no existen y no arrojará un error si el directorio ya existe.
+    *   'mv hola.txt documentos_scripts': El comando 'mv' (move) se usa para mover archivos o directorios. En este caso, mueve el archivo 'hola.txt' (que creamos con 'script3.sh') al directorio 'documentos_scripts/'.
 
-Por ultimo hacemos que este script sea ejecutable porque sino estamos jodidos, para ejecutamos chmod +x.
-
-## Script2
-
-echo "¿Cuál es tu nombre?" - > 
-Muestra un mensaje en pantalla el cual le pide al ususario que diga su nombre
-
-read nombre
-
-Con este comando espera que el usuario escriba algo y presione enter, lo que el usuario escriba se guarda enuna variable llamada nombre.
-
-echo "¡Hola, $nombre!"
-
-Muestra el nombre usando la variable $nombre
-
-El simbolo $ se usa en bash para acceder al valor de una variable, es decir que si el usuario escribe Ana, el resultado sera ¡Hola Ana!
-
-
-## Script3
-
-
-echo "Hoy aprendí a crear archivos con Bash." > mis_notas.txt
-
-El simbolo > se llama redireccion de salida, esto significa que la salida del comando la envia a el archivo en lugar de mostrarla por terminal
-
-El comando echo normalmente muestra el texto en la terminal
-Pero con > mis_notas.txt, en lugar de mostrar el texto los escribe dentro del archivo llamado mis_notas.txt
-
-
-## Script4
-
-mkdir documentos
-
-Creamos una nueva carpeta (directorio)
-
-mv mis_notas.txt documentos/
-
-Mueve el archivo mis_notas.txt a la carpeta documentos/
-
-
+*   **Ejecución:**
+    ```
+    ./script4.sh
+    ```
+*   **Verificación:**
+    Para confirmar los cambios, puedes listar el contenido del directorio 'documentos_scripts':
+    ```
+    ls -l documentos_scripts/
+    ```
 
 
 >>>>>>> 4a068a57d691d62219480179e233a2d315d5165a
